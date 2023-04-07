@@ -17,22 +17,22 @@
 
 1. 回归：试着推测出这一系列连续值属性
 
-    ![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412163003-fn6so0e-20220628213023-705j9x6.png)
+    ![image.png](assets/image-20220412163003-fn6so0e-20220628213023-705j9x6.png)
 2. 分类：
 
-    ![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412163011-b2qdrxj-20220628213023-0cobt4j.png)
+    ![image.png](assets/image-20220412163011-b2qdrxj-20220628213023-0cobt4j.png)
 
 ## 无监督学习
 
 不提供“正确答案”。
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412163127-qwtdfie-20220628213023-ytueehu.png)![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412163133-0k0741u-20220628213023-s3mypmm.png)
+![image.png](assets/image-20220412163127-qwtdfie-20220628213023-ytueehu.png)![image.png](assets/image-20220412163133-0k0741u-20220628213023-s3mypmm.png)
 
 # 单变量线性回归
 
 ## 线性回归模型
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412163408-3sorj95-20220628213023-lqmqjrr.png)
+![image.png](assets/image-20220412163408-3sorj95-20220628213023-lqmqjrr.png)
 
 **预测函数：**$h_\theta \left( x \right)=\theta_{0}+\theta_{1}x$
 
@@ -40,15 +40,15 @@
 
 三维图
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412163433-v5srjbl-20220628213023-utzoc8h.png)
+![image.png](assets/image-20220412163433-v5srjbl-20220628213023-utzoc8h.png)
 
 等高线图
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412163536-2knli7i-20220628213023-sz6dctp.png)
+![image.png](assets/image-20220412163536-2knli7i-20220628213023-sz6dctp.png)
 
 ## 梯度下降
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412163714-31ne5h5-20220628213023-rhud30b.png)
+![image.png](assets/image-20220412163714-31ne5h5-20220628213023-rhud30b.png)
 
 算法
 
@@ -101,7 +101,7 @@
 
 * 绘制迭代次数和代价函数的图表来观测算法在何时趋于收敛
 
-  ![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412170419-e8ayj69-20220628213023-fxkzk3e.png)
+  ![image.png](assets/image-20220412170419-e8ayj69-20220628213023-fxkzk3e.png)
 * 尝试$\alpha=0.01，0.03，0.1，0.3，1，3，10$，每次乘以/除以$\sqrt{10}$
 
 ## 特征和多项式回归模型
@@ -140,7 +140,7 @@ $\theta ={{\left( {X^T}X \right)}^{-1}}{X^{T}}y$
 
 y值离散，不再适用线性回归，因为线性回归的预测值包含很多0/1之外的值，即使设置阈值来强行规定，**曲线也会因为一些极端数据而很大变化**。
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412234551-anccufp-20220628213023-g210wsm.png)
+![image.png](assets/image-20220412234551-anccufp-20220628213023-g210wsm.png)
 
 ## 逻辑回归模型
 
@@ -154,13 +154,13 @@ y值离散，不再适用线性回归，因为线性回归的预测值包含很�
 
 注意：$h_\theta \left( x \right)=P\left( y=1|x;\theta \right)$，表示**可能性**
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412235015-1d5qp4z-20220628213023-210boqw.png)
+![image.png](assets/image-20220412235015-1d5qp4z-20220628213023-210boqw.png)
 
 0和1的预测以$y=0.5$为分界，也就是以$\theta^{T}X=z=0$为分界
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412235210-onnmh7d-20220628213023-vs2qbzp.png)
+![image.png](assets/image-20220412235210-onnmh7d-20220628213023-vs2qbzp.png)
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412235213-6p1o0ti-20220628213023-etmn2ek.png)
+![image.png](assets/image-20220412235213-6p1o0ti-20220628213023-etmn2ek.png)
 
 若$\theta=\begin{matrix}[-3 & 1 & 1]\end{matrix}$
 
@@ -168,7 +168,7 @@ $-3+{x_1}+{x_2} \geq 0$
 
 分界线非常自然
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220412235630-tuwfog6-20220628213023-rea3jd5.png)
+![image.png](assets/image-20220412235630-tuwfog6-20220628213023-rea3jd5.png)
 
 对于分界线是曲线的模型可以引入高次项
 
@@ -182,13 +182,13 @@ $\theta=\begin{matrix}[-1 & 0 & 0 & 1 & 1]\end{matrix}$
 
 注意：本处“凸函数”，从英美定义，指U型函数
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220413000144-q3oo7bn-20220628213023-8y04mh4.png)
+![image.png](assets/image-20220413000144-q3oo7bn-20220628213023-8y04mh4.png)
 
 **新代价函数：**$J\left( \theta  \right)=\frac{1}{m}\sum\limits_{i=1}^{m}{{Cost}\left( {h_\theta}\left( {x}^{\left( i \right)} \right),{y}^{\left( i \right)} \right)}$
 
 其中$\operatorname{Cost}\left(h_{\theta}(x), y\right)=\left\{\begin{aligned} -\log \left(h_{\theta}(x)\right) & \text { if } y=1 \\ -\log \left(1-h_{\theta}(x)\right) & \text { if } y=0 \end{aligned}\right.$
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220413000539-mp1q1g9-20220628213023-9j71bze.png)
+![image.png](assets/image-20220413000539-mp1q1g9-20220628213023-9j71bze.png)
 
 这样构建的$Cost\left( {h_\theta}\left( x \right),y \right)$函数的特点是：当实际的  $y=1$ 且${h_\theta}\left( x \right)$也为 1 时误差为 0，当 $y=1$ 但${h_\theta}\left( x \right)$不为1时误差随着${h_\theta}\left( x \right)$变小而变大；当实际的 $y=0$ 且${h_\theta}\left( x \right)$也为 0 时代价为 0，当$y=0$ 但${h_\theta}\left( x \right)$不为 0时误差随着 ${h_\theta}\left( x \right)$的变大而变大。非常优秀。
 
@@ -261,11 +261,11 @@ initialTheta = [...code to initialize theta...];
 
 ## 一对多分类
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220413001653-4cdqosf-20220628213023-3b2qxq8.png)
+![image.png](assets/image-20220413001653-4cdqosf-20220628213023-3b2qxq8.png)
 
 如何把“一对多”转化为“一对一”？“一对余”思想
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220413001739-suqyce4-20220628213023-dglbi92.png)
+![image.png](assets/image-20220413001739-suqyce4-20220628213023-dglbi92.png)
 
 $h_\theta^{\left( i \right)}\left( x \right)=p\left( y=i|x;\theta  \right), i=1, 2, 3, ..., k$
 
@@ -275,9 +275,9 @@ $h_\theta^{\left( i \right)}\left( x \right)=p\left( y=i|x;\theta  \right), i=1,
 
 ## 欠拟合与过拟合
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220413230040-e2fbpy5-20220628213023-p4f1syz.png)
+![image.png](assets/image-20220413230040-e2fbpy5-20220628213023-p4f1syz.png)
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220413230107-l86gnko-20220628213023-f7rdu0b.png)
+![image.png](assets/image-20220413230107-l86gnko-20220628213023-f7rdu0b.png)
 
 过拟合的问题往往是由高次项系数过大产生，所以应对此施加惩罚
 
@@ -289,7 +289,7 @@ $h_\theta^{\left( i \right)}\left( x \right)=p\left( y=i|x;\theta  \right), i=1,
 
 $\lambda$称为正则化参数
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220413230415-5n0pafd-20220628213023-tpu39fv.png)
+![image.png](assets/image-20220413230415-5n0pafd-20220628213023-tpu39fv.png)
 
 注意：过大的$\lambda$可能导致欠拟合
 
@@ -309,7 +309,7 @@ ${\theta_j}:={\theta_j}-a[\frac{1}{m}\sum\limits_{i=1}^{m}{(({h_\theta}({{x}^{(i
 
 ### 正规方程
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220413231511-mphsahv-20220628213023-of80l8d.png)
+![image.png](assets/image-20220413231511-mphsahv-20220628213023-of80l8d.png)
 
 $\theta ={{\left( {X^T}X +\lambda (I-A)\right)}^{-1}}{X^{T}}y$
 
@@ -354,13 +354,13 @@ end
 
 无论是线性回归还是逻辑回归都有这样一个缺点，即：当特征太多时，计算的负荷会非常大
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220414115847-g8om9cx-20220628213023-visxtcm.png)
+![image.png](assets/image-20220414115847-g8om9cx-20220628213023-visxtcm.png)
 
 大脑的特点：给听觉中枢输入视觉信号，听觉中枢能够学会“看”
 
 ## 前向传播算法
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220414132034-de4d3bs-20220628213023-k4ewfkz.png)
+![image.png](assets/image-20220414132034-de4d3bs-20220628213023-k4ewfkz.png)
 
 $a_{1}^{(2)}=g(\Theta _{10}^{(1)}{{x}_{0}}+\Theta _{11}^{(1)}{{x}_{1}}+\Theta _{12}^{(1)}{{x}_{2}}+\Theta _{13}^{(1)}{{x}_{3}})$
 ​$a_{2}^{(2)}=g(\Theta _{20}^{(1)}{{x}_{0}}+\Theta _{21}^{(1)}{{x}_{1}}+\Theta _{22}^{(1)}{{x}_{2}}+\Theta _{23}^{(1)}{{x}_{3}})$
@@ -371,21 +371,21 @@ $a_{1}^{(2)}=g(\Theta _{10}^{(1)}{{x}_{0}}+\Theta _{11}^{(1)}{{x}_{1}}+\Theta _{
 
 注意：每一层都有一个偏置项，值为1
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220414132148-7m5kjcj-20220628213023-9g6v8y9.png)
+![image.png](assets/image-20220414132148-7m5kjcj-20220628213023-9g6v8y9.png)
 
 通过AND、(NOT A) AND (NOT B)以及OR复合得到A NOR B，非常神奇
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220414132205-jci4b2q-20220628213023-1d10sy2.png)
+![image.png](assets/image-20220414132205-jci4b2q-20220628213023-1d10sy2.png)
 
 多类分类
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220414132656-tetwgwh-20220628213023-tp0n5u3.png)
+![image.png](assets/image-20220414132656-tetwgwh-20220628213023-tp0n5u3.png)
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220414132703-y7cgrzr-20220628213023-kemosxl.png)
+![image.png](assets/image-20220414132703-y7cgrzr-20220628213023-kemosxl.png)
 
 ## 代价函数
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220415150340-1i1zop3-20220628213023-t5agrj0.png)
+![image.png](assets/image-20220415150340-1i1zop3-20220628213023-t5agrj0.png)
 
 逻辑回归代价函数：$J\left( \theta  \right)=\frac{1}{m}\sum\limits_{i=1}^{m}{[-{{y}^{(i)}}\log \left( {h_\theta}\left( {{x}^{(i)}} \right) \right)-\left( 1-{{y}^{(i)}} \right)\log \left( 1-{h_\theta}\left( {{x}^{(i)}} \right) \right)]}+\frac{\lambda }{2m}\sum\limits_{j=1}^{n}{\theta _{j}^{2}}$
 
@@ -403,7 +403,7 @@ $\Theta_{ij}^{(l)}$表示神经网络的第$l$层的第$j$个神经元到第$l+1
 
 如何求偏导$\frac{\partial}{\partial\Theta^{(l)}_{ij}}J\left(\Theta\right)$？反向传播算法
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220415215053-afwq1zs-20220628213023-edl7a51.png)
+![image.png](assets/image-20220415215053-afwq1zs-20220628213023-edl7a51.png)
 
 算法
 
@@ -432,9 +432,9 @@ $\Theta_{ij}^{(l)}$表示神经网络的第$l$层的第$j$个神经元到第$l+1
 
 ### 直观理解
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416001334-1ucekgn-20220628213023-fxxwarx.png)
+![image.png](assets/image-20220416001334-1ucekgn-20220628213023-fxxwarx.png)
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416001341-zxh4rnw-20220628213023-zqvikui.png)
+![image.png](assets/image-20220416001341-zxh4rnw-20220628213023-zqvikui.png)
 
 ### 一些运算细节
 
@@ -503,7 +503,7 @@ end
 
 ### 随机初始化
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416011352-eqo9pdl-20220628213023-gwb6sn2.png)
+![image.png](assets/image-20220416011352-eqo9pdl-20220628213023-gwb6sn2.png)
 
 将参数初始化为0在神经网络中会导致权重对称问题，也就是某一对参数始终相等。因此我们要随机初始化参数，使得$\theta_i \isin (-\epsilon,\epsilon)$
 
@@ -567,25 +567,25 @@ $J_{test}(\theta)=\frac{1}{2m_{test}}\sum\limits_{i=1}^{m_{test}}(h_{\theta}(x^{
 
  方差（Variance）：过拟合
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416153413-atxjxd8-20220628213023-osxnlig.png)
+![image.png](assets/image-20220416153413-atxjxd8-20220628213023-osxnlig.png)
 
 模型的选择影响欠拟合/过拟合情况
 
 欠拟合->正好->过拟合
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416153445-uf8unch-20220628213023-n5pelpm.png)
+![image.png](assets/image-20220416153445-uf8unch-20220628213023-n5pelpm.png)
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416153600-rnwbyk3-20220628213023-y03rkdf.png)
+![image.png](assets/image-20220416153600-rnwbyk3-20220628213023-y03rkdf.png)
 
 ## 正则化和偏差/方差
 
 正则化参数影响欠拟合/过拟合情况
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416153653-5z5yiz9-20220628213023-rokmxa8.png)
+![image.png](assets/image-20220416153653-5z5yiz9-20220628213023-rokmxa8.png)
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416153731-zmvd5f1-20220628213023-zw3tp7p.png)
+![image.png](assets/image-20220416153731-zmvd5f1-20220628213023-zw3tp7p.png)
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416153825-8lywyl3-20220628213023-ic8vgyw.png)
+![image.png](assets/image-20220416153825-8lywyl3-20220628213023-ic8vgyw.png)
 
 ## 学习曲线
 
@@ -599,19 +599,19 @@ $J_{cv}(\Theta)$（事实上，$J_{test}(\Theta)$也一样）不断变小，因�
 
 正好
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416153921-cevfwhw-20220628213023-fe25kgt.png)
+![image.png](assets/image-20220416153921-cevfwhw-20220628213023-fe25kgt.png)
 
 欠拟合
 
 两个函数很接近，意味着增加数据对模型提示水平没有意义
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416153932-lu5yay4-20220628213023-xkiyvqs.png)
+![image.png](assets/image-20220416153932-lu5yay4-20220628213023-xkiyvqs.png)
 
 过拟合
 
 两个函数随数据增多有很大的接近空间，意味着增加数据量很有意义
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416154432-4645i9d-20220628213023-w2v9i4k.png)
+![image.png](assets/image-20220416154432-4645i9d-20220628213023-w2v9i4k.png)
 
 ## 解决办法
 
@@ -626,7 +626,7 @@ $J_{cv}(\Theta)$（事实上，$J_{test}(\Theta)$也一样）不断变小，因�
 
 对于神经网络
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220416154832-7gl3ftd-20220628213023-1jkixfp.png)
+![image.png](assets/image-20220416154832-7gl3ftd-20220628213023-1jkixfp.png)
 
 我们通过调整神经元数量、层数、正则化参数$\lambda$来调整模型的欠拟合/过拟合情况
 
@@ -666,7 +666,7 @@ $J_{cv}(\Theta)$（事实上，$J_{test}(\Theta)$也一样）不断变小，因�
 
 判断为阳性的阈值降低，宁可错杀不放过，查准率降低，查全率上升
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417152059-lhjp87o-20220628213023-pummcb4.png)
+![image.png](assets/image-20220417152059-lhjp87o-20220628213023-pummcb4.png)
 
 如何权衡两者？
 
@@ -678,7 +678,7 @@ $F_1 = 2\frac{PR}{P+R}$
 
 堆数据量有用吗？在很多时候很有用。
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417162519-b16k26s-20220628213024-w1p5vc0.png)
+![image.png](assets/image-20220417162519-b16k26s-20220628213024-w1p5vc0.png)
 
 具体在什么时候有用？
 
@@ -686,7 +686,7 @@ $F_1 = 2\frac{PR}{P+R}$
 
 否则，尝试有更多参数的学习算法，降低偏差（bias）
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417162751-2h6rnt2-20220628213024-66iwyjq.png)
+![image.png](assets/image-20220417162751-2h6rnt2-20220628213024-66iwyjq.png)
 
 **当一个有很多参数的算法得到大量数据时，它其实不太会过拟合**
 
@@ -696,13 +696,13 @@ $F_1 = 2\frac{PR}{P+R}$
 
 逻辑回归的变体
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417164214-hy1s5kz-20220628213024-5z3pkxk.png)
+![image.png](assets/image-20220417164214-hy1s5kz-20220628213024-5z3pkxk.png)
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417164251-j9e0yng-20220628213024-v9yj8gs.png)
+![image.png](assets/image-20220417164251-j9e0yng-20220628213024-v9yj8gs.png)
 
 同一个分段的线性方程$\text{cost}$去近似逻辑回归的损失函数，便于计算
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417165053-nsanohe-20220628213024-7gdbqoe.png)
+![image.png](assets/image-20220417165053-nsanohe-20220628213024-7gdbqoe.png)
 
 SVM的代价函数：$J(\theta)= C \sum\limits_{i=1}^{m}\left[y^{(i)} \operatorname{cost}_{1}\left(\theta^{T} x^{(i)}\right)+\left(1-y^{(i)}\right) \operatorname{cost}_{0}\left(\theta^{T} x^{(i)}\right)\right]+\frac{1}{2} \sum\limits_{i=1}^{n} \theta_{j}^{2}$
 
@@ -717,11 +717,11 @@ SVM的预测函数：$h_{\theta}(x)=\left\{\begin{array}{c} 1 \quad\text { if } 
 
 ## 大间距分类
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417171124-8zsvmkp-20220628213024-2zxmysq.png)
+![image.png](assets/image-20220417171124-8zsvmkp-20220628213024-2zxmysq.png)
 
 SVM事实上要求预测函数能够和数据点保持较大的距离来使得代价函数为零
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417171309-j3uobci-20220628213024-164kiqa.png)
+![image.png](assets/image-20220417171309-j3uobci-20220628213024-164kiqa.png)
 
 因此，虽然粉色、绿色和黑色的线都能对给定数据点完美分类，但SVM会选择最自然也是最优的黑色线
 
@@ -729,7 +729,7 @@ SVM事实上要求预测函数能够和数据点保持较大的距离来使得�
 
 事实上，在让代价函数最小化的过程中，我们希望找出在$y=1$和$y=0$两种情况下都使得代价函数中左边的这一项尽量为零的参数。如果我们找到了这样的参数，则我们的最小化问题便转变成求：$\min \frac{1}{2} \sum_{j=1}^{n} \theta_{j}^{2} s . t\left\{\begin{array}{c} \theta^{T} x^{(i)} \geq 1 \text { if } y^{(i)}=1 \\ \theta^{T} x^{(i)} \leq-1 \text { if } y^{(i)}=0 \end{array}\right.$
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417172428-rs0tb7u-20220628213024-cg7egeq.png)
+![image.png](assets/image-20220417172428-rs0tb7u-20220628213024-cg7egeq.png)
 
 当$C$很大的时候，学习算法会受到很大的异常点影响，得到粉色，过拟合
 
@@ -745,7 +745,7 @@ $C$较小时，相当于$\lambda$较大，可能会导致低拟合，高偏差�
 
 **首先简化问题道二维平面，强制决策边界过原点**
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417173213-axz8n7n-20220628213024-jm9gdgd.png)
+![image.png](assets/image-20220417173213-axz8n7n-20220628213024-jm9gdgd.png)
 
 在存在能使得代价函数前一项为零的决策边界的情况下，我们要求的实际上是：
 
@@ -753,7 +753,7 @@ $\min \frac{1}{2} \sum_{j=1}^{n} \theta_{j}^{2} s . t\left\{\begin{array}{c} \th
 
 而$\theta^{T} x^{(i)}$实质上是$x^{(i)}$和$\theta$的内积，也就是前者在后者上的投影$p^{(i)}$和$\theta$欧氏长度的乘积
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417173321-ixm29kq-20220628213024-966vvqo.png)
+![image.png](assets/image-20220417173321-ixm29kq-20220628213024-966vvqo.png)
 
 注意：决策边界和$\theta$向量垂直
 
@@ -763,7 +763,7 @@ $\min \frac{1}{2} \sum_{j=1}^{n} \theta_{j}^{2} s . t\left\{\begin{array}{c} \th
 
 核函数（Kernel Function）
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417175042-41e70rk-20220628213024-8lfgfco.png)
+![image.png](assets/image-20220417175042-41e70rk-20220628213024-8lfgfco.png)
 
 对于这种决策边界，我们的模型可能是${{\theta }_{0}}+{{\theta }_{1}}{{x}_{1}}+{{\theta }_{2}}{{x}_{2}}+{{\theta }_{3}}{{x}_{1}}{{x}_{2}}+{{\theta }_{4}}x_{1}^{2}+{{\theta }_{5}}x_{2}^{2}+\cdots$的形式
 
@@ -774,7 +774,7 @@ $\min \frac{1}{2} \sum_{j=1}^{n} \theta_{j}^{2} s . t\left\{\begin{array}{c} \th
 
 给定一个训练样本x，我们利用x的各个特征与我们预先选定的地标（landmarks）$l^{(1)},l^{(2)},l^{(3)}$的近似程度来选取新的特征$f_1,f_2,f_3$。
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417195700-upr8ejm-20220628213024-tlh6bc3.png)
+![image.png](assets/image-20220417195700-upr8ejm-20220628213024-tlh6bc3.png)
 
 如${{f}_{j}}=\text{similarity}(x,{{l}^{(j)}})=e(-\frac{{{\left\| x-{{l}^{(j)}} \right\|}^{2}}}{2{{\sigma }^{2}}})$
 
@@ -786,15 +786,15 @@ $\text{similarity}(x,{{l}^{(j)}})$为核函数，具体而言，这里是高斯�
 
 $\sigma$为方差，类似于正态分布
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417200444-3z06tw2-20220628213024-1jjcpyb.png)
+![image.png](assets/image-20220417200444-3z06tw2-20220628213024-1jjcpyb.png)
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417200549-zk1yeqs-20220628213024-2hn7sim.png)
+![image.png](assets/image-20220417200549-zk1yeqs-20220628213024-2hn7sim.png)
 
 如何选择地标（landmark）？
 
 直接将每个数据点作为地标$l^{(1)}=x^{(1)},l^{(2)}=x^{(2)},.....,l^{(m)}=x^{(m)}$
 
-![image.png](计算机/课程/Machine%20Learning%20(Coursera)/assets/image-20220417212556-i84jib9-20220628213024-vkowyyk.png)
+![image.png](assets/image-20220417212556-i84jib9-20220628213024-vkowyyk.png)
 
 给定$x$，计算新特征$f$，当$θ^Tf>=0$时，预测$y=1$，否则反之
 
